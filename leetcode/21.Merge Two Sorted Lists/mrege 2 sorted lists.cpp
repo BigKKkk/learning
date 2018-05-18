@@ -40,3 +40,18 @@ public:
         return l3->next;
     }
 }
+/**
+* @file （本文件的文件名eg：mib.h） * @brief （本文件实现的功能的简述）
+*	@version 1.1	（版本声明）
+*	@author	（作者，eg：张三）
+*	@date	（文件创建日期，eg：2010年12月15日）
+*/
+
+函数头注释：
+
+/** *@ Description:向接收方发送SET请求
+*	@param req - 指向整个SNMP SET 请求报文.
+*	@param ind - 需要处理的subrequest 索引.
+*	@return 成功：SNMP_ERROR_SUCCESS，失败：SNMP_ERROR_COMITFAIL
+*/
+
