@@ -27,13 +27,14 @@ public:
 		{
 			// 判断target-numbers[i]在不在
 			// 如果存在这样的数
-			if (mp.count(target - numbers[i]))
+			if (mp.count(target - numbers[i]) == true)
 			{
 				ans.push_back(mp[target - numbers[i]] + 1);
 				ans.push_back(i + 1);
 				break;
 			}
-			if (mp.count(numbers[i]) != 1)
+			// if (mp.count(numbers[i]) != true)
+			else
 			{
 				mp[numbers[i]] = i;
 			}
@@ -46,7 +47,7 @@ public:
 int main(void)
 {
 
-	std::vector<int> numbers = { 3,2,4 };
+	std::vector<int> numbers = { 3,7,0,2,4 };
 	int target = 6;
 	Solution solut = Solution();
 	std::cout << "[" << solut.TwoSum(numbers, target)[0] << "," << std::endl;
